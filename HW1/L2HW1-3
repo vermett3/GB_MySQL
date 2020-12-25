@@ -21,4 +21,4 @@ dir
 mysql
 use sample;
 source sample.sql;
-DESCRIBE sample.users;
+describe sample.users;
