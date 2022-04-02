@@ -1,6 +1,0 @@
-Написать скрипт, возвращающий список имен (только firstname) пользователей без повторений в алфавитном порядке
-
-use vk;
-SELECT DISTINCT first_name FROM users; --вывод списка юзеров
-
-SELECT DISTINCT first_name from users order by first_name ASC; -- вывод в алфавитном порядке
