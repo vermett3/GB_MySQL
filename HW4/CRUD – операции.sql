@@ -1,3 +1,5 @@
+
+
 2. Написать скрипт, возвращающий список имен (только firstname) пользователей без повторений в алфавитном порядке
 
 use vk;
@@ -11,7 +13,7 @@ SELECT DISTINCT first_name from users order by first_name ASC; -- вывод в 
 -- добавление поля is_active в таблицу profiles со значение 1 по умолчанию
 ALTER table profiles
 add column is_active bit default 1;
--- отмечаю несовершеннолетних неактивными
+-- отметим несовершеннолетних неактивными
 UPDATE profiles 
 set is_active = 0
 WHERE birthday + INTERVAL 18 YEAR > NOW(); 
@@ -21,3 +23,5 @@ WHERE birthday + INTERVAL 18 YEAR > NOW();
 UPDATE messages 
 set body = NULL 
 where created_at > NOW();
+
+5. 
