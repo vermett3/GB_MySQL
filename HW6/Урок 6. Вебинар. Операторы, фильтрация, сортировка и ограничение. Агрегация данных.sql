@@ -24,3 +24,7 @@ WHERE user_id IN (
 
 3) Определить кто больше поставил лайков (всего): мужчины или женщины.
 
+SELECT COUNT(*) AS 'кол-во лайков', gender FROM posts_likes, profiles
+WHERE posts_likes.user_id = profiles.user_id
+GROUP BY gender;
+
